@@ -211,7 +211,8 @@ header {
   width: 100%;
 }
 .access-content {
-  padding: 50px 0;
+  padding-top: 50px;
+  overflow: hidden;
 }
 .access-content > div{
   float: left;
@@ -224,11 +225,94 @@ header {
 .access-right {
   text-align: center;
 }
+.access-right img {
+  /* display: block; */
+  float: right;
+}
 .btn-download {
   margin-top: 30px;
 }
 
 /* ################## Section : banner ###################### */
+.banner {
+  background:
+  url(images/wave-line.png) no-repeat center right 100px,
+  linear-gradient(to right, #69acfe, #6eaefd);
+  background-size: 80px;
+}
+.banner-inner {
+  width: 1300px;
+  margin: auto;
+}
+.banner-content {
+  overflow: hidden;
+  padding: 40px 0;
+}
+.banner-content > div {
+  float: left;
+  width: 50%;
+}
+input[name=tabmenu] {
+  display: none;
+}
+.tab-btn {}
+.tab-btn label {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  color: #fff;
+  margin: 5px;
+  cursor: pointer;
+}
+.tab-btn label em {
+  background-color: #fff;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 20px;
+}
+.tab-btn label em img {
+  width: 60px;
+  filter: invert(63%) sepia(63%) saturate(2002%) hue-rotate(187deg) brightness(98%) contrast(106%);
+}
+.tab-btn label span {
+  display: block;
+  margin-top: 10px;
+}
+.tab {
+  display: none;
+  color: #fff;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.tab h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+/* checked function */
+input[id=tab1]:checked ~ .tabs .tab1,
+input[id=tab2]:checked ~ .tabs .tab2,
+input[id=tab3]:checked ~ .tabs .tab3 {
+  display: block;
+}
+input[id=tab1]:checked ~ .tab-btn label[for=tab1] em,
+input[id=tab2]:checked ~ .tab-btn label[for=tab2] em,
+input[id=tab3]:checked ~ .tab-btn label[for=tab3] em {
+  background-color: #34495e;
+}
+input[id=tab1]:checked ~ .tab-btn label[for=tab1] em img,
+input[id=tab2]:checked ~ .tab-btn label[for=tab2] em img,
+input[id=tab3]:checked ~ .tab-btn label[for=tab3] em img {
+  filter: invert()
+}
+input[id=tab1]:checked ~ .tab-btn label[for=tab1] span,
+input[id=tab2]:checked ~ .tab-btn label[for=tab2] span,
+input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
+  color: #34495e;
+}
+
 /* ################## Section : feature ##################### */
 /* ################## Section : vision ###################### */
 /* ################## Section : faq ######################### */
