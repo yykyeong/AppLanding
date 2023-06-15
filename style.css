@@ -163,6 +163,71 @@ header {
 }
 
 /* ################## Section : ceo-access ################## */
+.ceo-inner,
+.access-inner {
+  width: 1300px;
+  margin: auto;
+}
+.ceo-content {
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  padding: 50px 0;
+}
+.ceo-content > div {
+  float: left;
+  width: 50%;
+}
+.ceo-left {
+  padding-right: 50px;
+}
+.ceo-left img {
+  width: 30px;
+}
+.ceo-left h3 {
+  font-weight: bold;
+}
+.ceo-right {
+  text-align: center;
+}
+.ceo-right > div {
+  float: left;
+  padding: 20px;
+}
+.ceo-msg {
+  width: 60%;
+}
+.ceo-msg h3 {
+  font-size: 28px;
+}
+.ceo-msg h3 big {
+  display: block;
+  color: #009b72;
+}
+.ceo-photo {
+  width: 40%;
+}
+.ceo-photo img {
+  border-radius: 15px;
+  width: 100%;
+}
+.access-content {
+  padding: 50px 0;
+}
+.access-content > div{
+  float: left;
+  width: 50%;
+}
+.access-left {
+  padding-right: 50px;
+  padding-top: 80px;
+}
+.access-right {
+  text-align: center;
+}
+.btn-download {
+  margin-top: 30px;
+}
+
 /* ################## Section : banner ###################### */
 /* ################## Section : feature ##################### */
 /* ################## Section : vision ###################### */
