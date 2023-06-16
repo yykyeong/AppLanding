@@ -42,6 +42,9 @@ body {
   background-color: #fff;
   color: #222;
 }
+section {
+  padding: 0 100px; 
+}
 /* Common CSS */
 .headline-share {
   text-align: center;
@@ -184,6 +187,38 @@ header {
   outline: none;
 }
 
+/* review */
+.review-slider .slick-dots li {
+  margin: 0;
+}
+.review-slider .slick-dots li button::before {
+  opacity: 1;
+  transform: scale(.8);
+}
+.review-slider .slick-dots li.slick-active button::before {
+  opacity: 1;
+  color: transparent;
+  border: 1px solid #000;
+  border-radius: 50%;
+  top: -2px;
+  transform: scale(.6);
+}
+.review-slider .slick-arrow {
+}
+.review-slider .slick-prev::before,
+.review-slider .slick-next::before {
+  color: red;
+  content: '\f104';
+  font-family: fontawesome;
+  color: #000;
+  font-size: 30px;
+  opacity: 1;
+}
+.review-slider .slick-next::before  {
+  transform: rotateY(180deg);
+  display: block;
+  /* 인라인요소라서 각도 안돌아감 > 블럭으로 바꿔줌 */
+}
 /* ################## Section : ceo-access ################## */
 .ceo-inner,
 .access-inner {
@@ -493,6 +528,34 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
   background-color: crimson;
   border-color: transparent;
 }
+
 /* ################## Section : review ###################### */
+.review {
+  background-color: #f9f9f9;
+}
+.review-inner {
+  width: 1300px;
+  margin: auto;
+}
+.review-content {
+  text-align: center;
+  width: 900px;
+  margin: auto;
+}
+h1.slogan {
+  font-size: 36px;
+}
+.review-slider {}
+.review-slider div {
+  outline: none;
+}
+.review-slider div p {
+  padding: 0 70px;
+}
+.review-slider div p span {
+  display: block;
+  font-weight: bold;
+}
+
 /* ################## Section : focus ####################### */
 /* ################## Footer ################################ */
