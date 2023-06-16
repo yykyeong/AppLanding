@@ -18,3 +18,14 @@ $(function(){
     breakLines: false, // 줄 바꿈 사용안함
   });
 })
+
+/*faq accordion*/
+$(function(){
+  $('.faq-desc').eq(0).show()
+  $('.faq-title').click(function(){
+    $(this).next().stop().slideDown()
+    $(this).parent().siblings().children('.faq-desc').stop().slideUp()
+    $(this).parent().addClass('active')
+    $(this).parent().siblings().removeClass('active')
+  })
+})
