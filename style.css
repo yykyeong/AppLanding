@@ -42,6 +42,28 @@ body {
   background-color: #fff;
   color: #222;
 }
+/* Common CSS */
+.headline-share {
+  text-align: center;
+}
+.headline-share h1 {
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 44px;
+}
+.headline-share h1::after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 80px;
+  background:linear-gradient(to right, #1f8de6, #5ed6fe);
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.headline-share p {
+  font-size: 20px;
+}
 
 /* ################## Header ################################ */
 header {
@@ -314,6 +336,29 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 }
 
 /* ################## Section : feature ##################### */
+.feature {}
+.feature-inner {
+  width: 1300px;
+  margin: auto;
+}
+.feature-content {
+  overflow: hidden;
+  margin: 100px 0;
+}
+.feature-content > div {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.feature-mockup {}
+.feature-about {
+  padding: 0 70px;
+  padding-top: 80px;
+}
+.feature-about h2 {
+  font-size: 30px;
+}
+
 /* ################## Section : vision ###################### */
 /* ################## Section : faq ######################### */
 /* ################## Section : review ###################### */
