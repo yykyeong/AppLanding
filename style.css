@@ -358,8 +358,48 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 .feature-about h2 {
   font-size: 30px;
 }
-
 /* ################## Section : vision ###################### */
+.vision {}
+.vision-inner {}
+.vision-content {
+  overflow: hidden;
+}
+.vision-content > div {
+  float: left;
+  width: 33.33333333%;
+  height: 400px;
+}
+.vision-item-headline {
+  width: 60%;
+}
+.vision-item-desc {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vision-item-desc h3 {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.vision-item-desc hr {
+  width: 45px;
+  height: 3px;
+  border: none;
+  background-color: #9b59b6;
+  display: inline-block;
+}
+.vision-item-desc p {
+  margin-top: 0;
+}
+.vision-item-photo {
+}
+.vision-item-photo img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover; /* 가로세로 비율 유지하지말고 부모요소안에 공간채워 bg:cover 높이, 너비값 필수 */
+
+}
 /* ################## Section : faq ######################### */
 /* ################## Section : review ###################### */
 /* ################## Section : focus ####################### */
