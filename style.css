@@ -558,4 +558,35 @@ h1.slogan {
 }
 
 /* ################## Section : focus ####################### */
+.focus {}
+.focus-inner {
+  width: 1300px;
+  margin: auto;
+}
+.focus-content {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 50px 0;
+}
+
+.focus-item {
+  display: inline-block;
+  width: 30%;
+  padding: 0 50px;
+}
+.focus-item img {
+  width: 75px;
+  filter: invert(96%) sepia(5%) saturate(3160%) hue-rotate(304deg) brightness(91%) contrast(96%);
+}
+.focus-item h3 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.focus-item i {
+  transform: scale(.5) rotate(45deg);
+}
+.focus-item p {
+  margin-top: 0;
+}
+
 /* ################## Footer ################################ */
