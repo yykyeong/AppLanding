@@ -34,6 +34,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* Default CSS */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'NEXON Lv2 Gothic', sans-serif;
   font-size: 18px;
@@ -47,7 +50,7 @@ body.active {
 
 }
 section {
-  padding: 0 100px; 
+  padding: 100px 0; 
 }
 /* Common CSS */
 .headline-share {
@@ -71,6 +74,23 @@ section {
 .headline-share p {
   font-size: 20px;
 }
+
+.btn-top {
+  position: fixed;
+  right: 20px;
+  bottom: -50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  line-height: 43px;
+  text-align: center;
+  transition: .5s;
+}
+.btn-top.active {
+  bottom: 20px;
+}
 /* ################## video modal ########################### */
 .video-modal {
   background-color: #000;
@@ -80,12 +100,14 @@ section {
   top: 0;
   left: 0;
   display: none;
+  z-index: 10000;
+
 }
 .close-modal {
   color: #fff;
   font-size: 40px;
   position: absolute;
-  top: 70px;
+  top: 20px;
   right: 20px;
   cursor: pointer;
   z-index: 9;
@@ -105,6 +127,11 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
+  transition: .5s;
+}
+header.active {
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .05);
 }
 .header-inner {
   width: 1300px;
@@ -129,6 +156,7 @@ header {
 .welcome {
   height: 90vh;
   position: relative;
+  padding: 0;
 }
 .slideshow {}
 .welcome-heading {
@@ -259,7 +287,50 @@ header {
 .mockup-slider .slick-dots li {
   margin: 0;
 }
+
+.ltr {
+  animation: ltr .5s linear both;
+}
+.rtl {
+  animation: rtl .5s linear both;
+}
+.utd {
+  animation: utd .5s linear both;
+}
+@keyframes ltr {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes rtl {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes utd {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* ################## Section : ceo-access ################## */
+.ceo-access {
+  padding: 0;
+}
 .ceo-inner,
 .access-inner {
   width: 1300px;
@@ -336,6 +407,7 @@ header {
   url(images/wave-line.png) no-repeat center right 100px,
   linear-gradient(to right, #69acfe, #6eaefd);
   background-size: 80px;
+  padding: 0;
 }
 .banner-inner {
   width: 1300px;
@@ -411,7 +483,8 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
 }
 
 /* ################## Section : feature ##################### */
-.feature {}
+.feature {
+}
 .feature-inner {
   width: 1300px;
   margin: auto;
@@ -434,7 +507,10 @@ input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
   font-size: 30px;
 }
 /* ################## Section : vision ###################### */
-.vision {}
+.vision {
+  padding-bottom: 0;
+  padding-top: 90px;
+}
 .vision-inner {}
 .vision-content {
   overflow: hidden;
@@ -630,7 +706,9 @@ h1.slogan {
 }
 
 /* ################## guide ################################# */
-.guide {}
+.guide {
+  padding-top: 0;
+}
 .guide-inner {
   width: 1300px;
   margin: auto;

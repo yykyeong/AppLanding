@@ -24,10 +24,28 @@ $(function(){
     autoStart: true, // 자동 재생 사용
     breakLines: false, // 줄 바꿈 사용안함
   });
+
+  /* Wow Scroll Reveal Animation */
+  wow = new WOW({
+    boxClass: 'wow',
+    offset: 150,
+    mobile: true
+  })
+  wow.init()
 })
 
-/*faq accordion*/
+
 $(function(){
+  /* 헤더 스크롤 */
+  $(window).scroll(function(){
+    if($(window).scrollTop() > 50){
+      $('header, .btn-top').addClass('active')
+    }
+    else {
+      $('header, .btn-top').removeClass('active')
+    }
+  });
+  /* faq accordion */
   $('.faq-desc').eq(0).show()
   $('.faq-title').click(function(){
     $(this).next().stop().slideDown()
