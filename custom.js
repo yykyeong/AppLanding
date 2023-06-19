@@ -63,4 +63,13 @@ $(function(){
     $('.video-modal').fadeOut()
     $('body').addClass('remove')
   })
+
+  /* 헤더 트리거 */
+  $('.trigger').click(function(){
+    $(this).toggleClass('active')
+    $('.gnb').toggleClass('active')
+  })
+  $('.gnb a, section').click(function(){
+    $('.gnb, .trigger').removeClass('active')
+  })
 })
